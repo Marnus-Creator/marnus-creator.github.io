@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Systems Consultant & SQL Developer</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --background-color: #f0f3f5;
+        }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: #ecf0f1;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+        .section {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .cv-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cv-button:hover {
+            background-color: #c0392b;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .skill {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1rem;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 2rem;
+        }
+        .social-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 2rem;
+            transition: color 0.3s ease;
+            text-align: center;
+        }
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+        .social-links .icon-description {
+            font-size: 0.8rem;
+            margin-top: 5px;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            display: block;
+            border: 3px solid white;
+        }
+        .burger-menu {
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .burger-menu div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        .nav-menu li {
+            margin: 0 15px;
+        }
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .section {
+                padding: 1.5rem;
+            }
+            .burger-menu {
+                display: block;
+            }
+            .nav-menu {
+                position: fixed;
+                right: -100%;
+                top: 5rem;
+                flex-direction: column;
+                background-color: var(--primary-color);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            }
+            .nav-menu.active {
+                right: 0;
+            }
+            .nav-menu li {
+                margin: 2.5rem 0;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="/api/placeholder/150/150" alt="Your Name" class="profile-image">
+            <h1>Your Name</h1>
+            <p>Systems Consultant & SQL Developer</p>
+            <a href="your-cv.pdf" class="cv-button" target="_blank">View My CV</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>As a dedicated Systems Consultant and SQL Developer, I bring [X] years of experience in designing and implementing robust database solutions. My expertise lies in optimizing system performance, data modeling, and translating complex business requirements into efficient database architectures.</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Core Competencies</h2>
+            <div class="skills">
+                <span class="skill">SQL Development</span>
+                <span class="skill">Database Design</span>
+                <span class="skill">Performance Tuning</span>
+                <span class="skill">Data Modeling</span>
+                <span class="skill">ETL Processes</span>
+                <span class="skill">Business Intelligence</span>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Key Projects</h2>
+            <p>Here are some highlights of my recent work:</p>
+            <ul>
+                <li>Developed a scalable data warehouse solution for a Fortune 500 company, resulting in a 40% improvement in query performance.</li>
+                <li>Implemented an ETL process that reduced data processing time by 60% for a major e-commerce platform.</li>
+                <li>Designed a real-time analytics dashboard for a financial services firm, enabling data-driven decision making.</li>
+            </ul>
+            <p>For more details on my projects, please check my GitHub profile.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new opportunities and challenges in the field of database management and systems consulting. Please feel free to reach out through LinkedIn or check out my projects on GitHub.</p>
+            <p>For a comprehensive overview of my experience and skills, please refer to my CV.</p>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="social-links">
+            <a href="your-cv.pdf" target="_blank" title="Download CV">
+                <i class="fas fa-file-pdf"></i>
+                <div class="icon-description">Download CV</div>
+            </a>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" title="LinkedIn Profile">
+                <i class="fab fa-linkedin"></i>
+                <div class="icon-description">Connect on LinkedIn</div>
+            </a>
+            <a href="https://github.com/your-username" target="_blank" title="GitHub Profile">
+                <i class="fab fa-github"></i>
+                <div class="icon-description">View GitHub Projects</div>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.burger-menu').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
